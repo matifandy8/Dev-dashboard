@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// $text-font-stack: 'Space Mono', monospace;;
+
+// $primary-color:  #009933;
+
+// $title-color:  #00ff55;
+
+// $text-color:  #008f30;
+
+
+// $bg-color: black;
+
+$max-width: 1180px;
+
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+);
+
+
+
+$base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/';
