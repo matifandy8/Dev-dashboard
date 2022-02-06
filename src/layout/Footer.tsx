@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <div>
-            <p>footer</p>
-        </div>
+        <footer>
+            <p>© 2022 Matias Fandiño, Inc.</p>
+        </footer>
     )
 }
 

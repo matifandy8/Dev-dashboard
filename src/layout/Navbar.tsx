@@ -3,7 +3,7 @@ import NavPrivate from "./navbars/NavPrivate";
 import NavPublic from "./navbars/NavPublic";
 
 const Navbar = () => {      
-  const isAuthenticated = true;
+  const isAuthenticated = false;
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const logout = () => {
