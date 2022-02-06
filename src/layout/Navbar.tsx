@@ -1,8 +1,19 @@
-const Navbar = () => {
+import { useState } from "react";
+import NavPrivate from "./navbars/NavPrivate";
+import NavPublic from "./navbars/NavPublic";
+
+const Navbar = () => {      
+  const isAuthenticated = true;
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+    const logout = () => {
+        localStorage.removeItem('token');
+        window.location.reload();
+    }
     return (
-        <div>
-            <p>Navbar</p>
-        </div>
+        <>
+                {isAuthenticated ? <NavPrivate/> : <NavPublic/>}
+        </>   
     )
 }
 
