@@ -1,0 +1,59 @@
+.Sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  transition: 0.5s;
+  color: white;
+  &__hamburger {
+    padding-top: 10px;
+    padding-left: 10px;
+    &-line {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__item {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 20px;
+    
+  }
+  &__link {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: white;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}

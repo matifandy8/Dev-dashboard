@@ -337,6 +337,10 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+}
+
 /**
  * Set up a decent box model on the root element
  */
@@ -347,6 +351,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
@@ -429,6 +435,76 @@ a {
   width: 1px;
 }
 
+.NavPublic {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+.NavPublic__list {
+  display: none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .NavPublic__list {
+    display: flex;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+.Sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  transition: 0.5s;
+  color: white;
+}
+.Sidebar__hamburger {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.Sidebar__hamburger-line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+.Sidebar__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 60px;
+  margin-bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Sidebar__item {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.Sidebar__link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.Sidebar__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
 footer {
   position: absolute;
   bottom: 0;

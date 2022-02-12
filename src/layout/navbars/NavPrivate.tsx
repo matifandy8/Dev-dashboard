@@ -2,19 +2,13 @@ import React from "react";
 
 const NavPrivate = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">About</a>
-        </li>
-        <li>
-          <a href="/login">Logout</a>
-        </li>
-      </ul>
-    </nav>
+    <nav className="NavPrivate">
+    <ul className="NavPrivate__list">
+      <li className="NavPrivate__item">
+        <a className="NavPrivate__link">Logout</a>
+      </li>
+    </ul>
+  </nav>
   );
 };
 

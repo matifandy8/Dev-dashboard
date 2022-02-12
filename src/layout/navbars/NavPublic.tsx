@@ -1,20 +1,13 @@
 import React from "react";
+import Sidebar from "../sidebars/Sidebar";
 
 const NavPublic = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">About</a>
-        </li>
-        <li>
-          <a href="/login">Login</a>
-        </li>
-        <li>
-          <a href="/login">Register</a>
+    <nav className="NavPublic">
+      <Sidebar/>
+      <ul className="NavPublic__list">
+        <li className="NavPublic__item">          
+          <a className="NavPublic__link" href="/login"> <span className="NavPublic__link-icon">icon</span> Login</a>
         </li>
       </ul>
     </nav>

@@ -3,6 +3,9 @@
 // -----------------------------------------------------------------------------
 @use  '../abstracts/variables';
 
+* {
+  margin: 0;
+}
 /**
  * Set up a decent box model on the root element
  */
@@ -14,7 +17,9 @@ html {
 }
 body{
   // background-color: variables.$bg-color;
-  height: 100%;
+  margin:0;
+  padding:0;
+  height:100%;
 }
 
 /**
