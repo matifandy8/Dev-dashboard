@@ -461,13 +461,13 @@ a {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   transition: 0.5s;
   color: white;
 }
 .Sidebar__hamburger {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 .Sidebar__hamburger-line {
   width: 30px;
@@ -487,6 +487,7 @@ a {
 }
 .Sidebar__item {
   display: flex;
+  margin: 5px;
   padding: 10px;
   padding-bottom: 20px;
 }
@@ -505,18 +506,3 @@ a {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  /* Height of the footer */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid #b1b1b1;
-}
-footer p {
-  margin: 0;
-  padding: 0;
-}

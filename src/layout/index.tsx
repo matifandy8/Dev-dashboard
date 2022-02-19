@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
@@ -7,7 +6,6 @@ const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
     <>
       <Navbar />
       {children}
-      <Footer />
     </>
   );
 };
