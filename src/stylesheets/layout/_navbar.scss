@@ -1,35 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the Navbar of the site/application.
 // -----------------------------------------------------------------------------
-@use  '../abstracts/variables';
+@use "../abstracts/variables";
 
-.NavPublic{
-    height: 60px;
-    width: 100%;
-    background-color: black;
-    color: white;
+.NavPublic {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  &__list {
     display: flex;
-    justify-content: flex-end;
-    &__list{
-        display: none;
-    }
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: white;
+  }
+  &__item{
+    background-color: pink;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .NavPublic{
-        &__list{
-            display: flex;
-        }
+  .NavPublic {
+    &__list {
+      display: flex;
     }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
 }

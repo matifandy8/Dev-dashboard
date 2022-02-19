@@ -7,7 +7,7 @@ const NavPublic = () => {
       <Sidebar/>
       <ul className="NavPublic__list">
         <li className="NavPublic__item">          
-          <a className="NavPublic__link" href="/login"> <span className="NavPublic__link-icon">icon</span> Login</a>
+          <a className="NavPublic__link" href="/login"> Signup / Login</a>
         </li>
       </ul>
     </nav>

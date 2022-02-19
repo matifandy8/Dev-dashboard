@@ -444,7 +444,21 @@ a {
   justify-content: flex-end;
 }
 .NavPublic__list {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+.NavPublic__item {
+  background-color: pink;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px;
+}
+.NavPublic__link {
+  color: white;
+  text-decoration: none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
