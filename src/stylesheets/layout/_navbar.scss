@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 @use "../abstracts/variables";
 
-.NavPublic {
+.NavPublic, .NavPrivate {
   height: 60px;
   width: 100%;
   background-color: black;

@@ -1,9 +1,11 @@
-const Home = () => {
-    return (
-        <div>
-            <h1>home</h1>
-        </div>
-    )
-}
+import Layout from "../../layout";
 
-export default Home
+const Home = () => {
+  return (
+    <Layout>
+      <h1>home</h1>
+    </Layout>
+  );
+};
+
+export default Home;

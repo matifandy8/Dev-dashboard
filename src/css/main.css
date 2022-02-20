@@ -435,7 +435,7 @@ a {
   width: 1px;
 }
 
-.NavPublic {
+.NavPublic, .NavPrivate {
   height: 60px;
   width: 100%;
   background-color: black;
@@ -443,20 +443,20 @@ a {
   display: flex;
   justify-content: flex-end;
 }
-.NavPublic__list {
+.NavPublic__list, .NavPrivate__list {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   color: white;
 }
-.NavPublic__item {
+.NavPublic__item, .NavPrivate__item {
   background-color: pink;
   padding: 5px;
   border-radius: 3px;
   margin: 5px;
 }
-.NavPublic__link {
+.NavPublic__link, .NavPrivate__link {
   color: white;
   text-decoration: none;
 }

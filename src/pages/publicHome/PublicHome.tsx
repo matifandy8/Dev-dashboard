@@ -1,8 +1,10 @@
+import Layout from "../../layout";
+
 function PublicHome() {
   return (
-    <div>
+    <Layout>
       <h1>Welcome to home </h1>
-    </div>
+    </Layout>
   );
 }
 
