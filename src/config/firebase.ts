@@ -6,7 +6,9 @@ import { getAuth } from 'firebase/auth';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
-const firebaseConfig = {
+
+export const config = {
+  firebaseConfig: {
   apiKey: "AIzaSyCxXRtk4S0qhjtWMNmL31RkcPBxvtsugf4",
   authDomain: "dev-dashboard-9eff0.firebaseapp.com",
   projectId: "dev-dashboard-9eff0",
@@ -19,10 +21,5 @@ const firebaseConfig = {
   // storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
   // messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
   // appId: process.env.REACT_APP_FIREBASE_APP_ID
+}
 };
-
-// initialize app
-const app = initializeApp(firebaseConfig);
-
-export const auth = getAuth(app);
-export default app;
