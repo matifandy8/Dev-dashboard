@@ -520,3 +520,113 @@ a {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.register .register__google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 400px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  border: none;
+}
+.register .register__google:hover {
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.295) 0px 1px 2px 0px;
+}
+.register .register__google img {
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+}
+.register .registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 416px;
+}
+.register .registerForm .form-check {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.register .registerForm .form-check .invalid-feedback {
+  color: #f44336;
+  padding: 5px;
+  font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register .registerForm .form-check input {
+  height: 18px;
+  width: 18px;
+}
+.register .registerForm .form-check label {
+  color: #6e6d7a;
+  font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+}
+.register .registerForm .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.register .registerForm .form-group .invalid-feedback {
+  color: #f44336;
+  padding: 5px;
+  font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register .registerForm .form-group label {
+  display: block;
+  margin: 14px 0 4px;
+  color: #0d0c22;
+  font: bold 15px/24px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register .registerForm .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f3f3f4;
+}
+.register .registerForm .form-group input:hover {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.register .registerForm .form-group input:focus {
+  outline: none;
+  border-color: #000;
+}
+.register .btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #0c0b0b;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  margin: 5px;
+}
+.register .btn:hover {
+  background-color: #272525;
+  color: white;
+}
+
+@media only screen and (min-width: 400px) {
+  .form-field-group {
+    display: flex;
+  }
+}

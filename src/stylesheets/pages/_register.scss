@@ -1,0 +1,112 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .register__google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border: none;
+    &:hover {
+      background-color: rgb(245, 245, 245);
+      box-shadow: rgba(0, 0, 0, 0.295) 0px 1px 2px 0px;
+    }
+    img {
+      height: 35px;
+      width: 35px;
+      padding: 5px;
+    }
+  }
+
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 416px;
+    .form-check{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        .invalid-feedback{
+            color: #f44336;
+            padding: 5px;
+            font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          }
+        input{
+            height: 18px;
+            width: 18px;
+        }
+        label{
+            color: #6e6d7a;
+            font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding-left: 10px;
+        }
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      .invalid-feedback{
+        color: #f44336;
+        padding: 5px;
+        font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      label {
+        display: block;
+        margin: 14px 0 4px;
+        color: #0d0c22;
+        font: bold 15px/24px "Haas Grot Text R Web", "Helvetica Neue", Helvetica,
+          Arial, sans-serif;
+      }
+      input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #f3f3f4;
+        &:hover {
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        }
+        &:focus {
+          outline: none;
+          border-color: #000;
+        }
+      }
+    }
+  }
+  .btn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #0c0b0b;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin: 5px;
+    &:hover {
+      background-color: #272525;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .form-field-group {
+    display: flex;
+  }
+}
