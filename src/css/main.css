@@ -520,80 +520,102 @@ a {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
-.register {
+.container__sidebar {
+  display: none;
+}
+.container__auth {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.register .register__google {
+.container__auth-title {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 30px 0px;
+  text-align: left;
+}
+.container__auth .separator {
+  padding-top: 40px;
+  width: 400px;
+  text-align: center;
+  line-height: 0.1em;
+  font-weight: 300;
+  border-bottom: 1px solid #e0e0e0;
+}
+.container__auth .separator span {
+  padding: 0 10px;
+  background: #fff;
+  color: #606060;
+  font-size: 1.2em;
+}
+.container__auth .auth__google {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
   width: 400px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.44) 0px 1px 2px 0px;
   border: none;
 }
-.register .register__google:hover {
+.container__auth .auth__google:hover {
   background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.295) 0px 1px 2px 0px;
 }
-.register .register__google img {
+.container__auth .auth__google img {
   height: 35px;
   width: 35px;
   padding: 5px;
 }
-.register .registerForm {
+.container__auth .authForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 416px;
+  padding-top: 20px;
 }
-.register .registerForm .form-check {
+.container__auth .authForm .form-check {
   display: flex;
   flex-direction: row;
   padding: 10px;
 }
-.register .registerForm .form-check .invalid-feedback {
+.container__auth .authForm .form-check .invalid-feedback {
   color: #f44336;
   padding: 5px;
-  font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.register .registerForm .form-check input {
+.container__auth .authForm .form-check input {
   height: 18px;
   width: 18px;
 }
-.register .registerForm .form-check label {
+.container__auth .authForm .form-check label {
   color: #6e6d7a;
   font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-left: 10px;
 }
-.register .registerForm .form-group {
+.container__auth .authForm .form-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 10px;
   padding: 10px;
 }
-.register .registerForm .form-group .invalid-feedback {
+.container__auth .authForm .form-group .invalid-feedback {
   color: #f44336;
   padding: 5px;
   font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.register .registerForm .form-group label {
+.container__auth .authForm .form-group label {
   display: block;
   margin: 14px 0 4px;
   color: #0d0c22;
   font: bold 15px/24px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.register .registerForm .form-group input {
+.container__auth .authForm .form-group input {
   display: block;
   width: 100%;
   padding: 10px;
@@ -601,15 +623,15 @@ a {
   border-radius: 8px;
   background-color: #f3f3f4;
 }
-.register .registerForm .form-group input:hover {
+.container__auth .authForm .form-group input:hover {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
-.register .registerForm .form-group input:focus {
+.container__auth .authForm .form-group input:focus {
   outline: none;
   border-color: #000;
 }
-.register .btn {
+.container__auth .btn {
   cursor: pointer;
   display: block;
   width: 100%;
@@ -620,7 +642,7 @@ a {
   border: none;
   margin: 5px;
 }
-.register .btn:hover {
+.container__auth .btn:hover {
   background-color: #272525;
   color: white;
 }
@@ -628,5 +650,39 @@ a {
 @media only screen and (min-width: 400px) {
   .form-field-group {
     display: flex;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .container__sidebar {
+    display: block;
+    background-color: #000000;
+    color: white;
+    width: 50%;
+  }
+  .container__sidebar .sidebar__text {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 40px 30px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .container__sidebar .sidebar__text span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.7;
+  }
+  .container__sidebar .sidebar__text h2 {
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .container__auth {
+    margin-top: 56px;
+    width: 60%;
   }
 }

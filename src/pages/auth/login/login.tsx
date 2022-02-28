@@ -58,73 +58,83 @@ const Login: React.FunctionComponent<ILoginPageProps> = (props) => {
   };
 
   return (
-    <div className="register">
-      <h1>Login to Dev-Dashboard</h1>
-      <button
-        className="register__google"
-        onClick={() => signInWithGoogle()}
-        disabled={authing}
-      >
-        <img
-          src="http://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png"
-          alt=""
-        />
-        Sign in with Google
-      </button>
-      <div className="registerForm">
-        <form onSubmit={handleSubmit(onSubmit)}>
-        
-
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              type="text"
-              {...register("email")}
-              className={`form-control ${errors.email ? "is-invalid" : ""}`}
-            />
-            <div className="invalid-feedback">{errors.email?.message}</div>
-          </div>
-
-          <div className="form-group">
-            <label>Password</label>
-            <input
-              type="password"
-              {...register("password")}
-              className={`form-control ${errors.password ? "is-invalid" : ""}`}
-            />
-            <div className="invalid-feedback">{errors.password?.message}</div>
-          </div>
-        
-
-          <div className="form-check">
-            <input
-              type="checkbox"
-              {...register("acceptTerms")}
-              className={`form-check-input ${
-                errors.acceptTerms ? "is-invalid" : ""
-              }`}
-            />
-            <label htmlFor="acceptTerms" className="form-check-label">
-              I have read and agree to the Terms
-            </label>
-            <div className="invalid-feedback">
-              {errors.acceptTerms?.message}
+    <div className="container">
+      <div className="container__sidebar">
+        <div className="sidebar__text">
+          <span> Dev Dashboard.</span>
+          <h2>Managing and accessing essential development resources</h2>
+        </div>
+      </div>
+      <div className="container__auth">
+        <h2 className="container__auth-title">Login to Dev-Dashboard</h2>
+        <button
+          className="auth__google"
+          onClick={() => signInWithGoogle()}
+          disabled={authing}
+        >
+          <img
+            src="http://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png"
+            alt=""
+          />
+          Sign in with Google
+        </button>
+        <p className="separator">
+          <span>or</span>
+        </p>
+        <div className="authForm">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                type="text"
+                {...register("email")}
+                className={`form-control ${errors.email ? "is-invalid" : ""}`}
+              />
+              <div className="invalid-feedback">{errors.email?.message}</div>
             </div>
-          </div>
 
-          <div className="form-group">
-            <button type="submit" className="btn btn-primary">
-              Register
-            </button>
-            <button
-              type="button"
-              onClick={() => reset()}
-              className="btn btn-warning float-right"
-            >
-              Reset
-            </button>
-          </div>
-        </form>
+            <div className="form-group">
+              <label>Password</label>
+              <input
+                type="password"
+                {...register("password")}
+                className={`form-control ${
+                  errors.password ? "is-invalid" : ""
+                }`}
+              />
+              <div className="invalid-feedback">{errors.password?.message}</div>
+            </div>
+
+            <div className="form-check">
+              <input
+                type="checkbox"
+                {...register("acceptTerms")}
+                className={`form-check-input ${
+                  errors.acceptTerms ? "is-invalid" : ""
+                }`}
+              />
+              <label htmlFor="acceptTerms" className="form-check-label">
+                I have read and agree to the Terms
+              </label>
+              <div className="invalid-feedback">
+                {errors.acceptTerms?.message}
+              </div>
+            </div>
+
+            <div className="form-group">
+              <button type="submit" className="btn btn-primary">
+                Login
+              </button>
+              <button
+                type="button"
+                onClick={() => reset()}
+                className="btn btn-warning float-right"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
