@@ -17,9 +17,7 @@ function App() {
       <Routes>
         <Route
           element={
-            <AuthRoute>
               <PublicHome />
-            </AuthRoute>
           }
           path="/"
         />

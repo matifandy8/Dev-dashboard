@@ -459,6 +459,7 @@ a {
 .NavPublic__link, .NavPrivate__link {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
