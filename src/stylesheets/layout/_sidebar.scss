@@ -7,6 +7,14 @@
   background-color: rgb(0, 0, 0);
   transition: 0.5s;
   color: white;
+  &__logo{
+    padding-top: 10px;
+    padding-left: 10px;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
   &__hamburger {
     padding-top: 15px;
     padding-left: 15px;

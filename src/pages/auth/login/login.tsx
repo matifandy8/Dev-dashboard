@@ -65,6 +65,9 @@ const Login: React.FunctionComponent<ILoginPageProps> = (props) => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
+        console.log(user.uid);
+        window.localStorage.setItem("token", user.uid);
+        navigate("/");
         console.log("Login with:", user.email);
       })
       .catch((error: any) => alert(error.message));
@@ -138,13 +141,9 @@ const Login: React.FunctionComponent<ILoginPageProps> = (props) => {
               <button type="submit" className="btn btn-primary">
                 Login
               </button>
-              <button
-                type="button"
-                onClick={() => reset()}
-                className="btn btn-warning float-right"
-              >
-                Reset
-              </button>
+              <p>
+                Not a member? <a href="/register">Sign up now</a>{" "}
+              </p>
             </div>
           </form>
         </div>

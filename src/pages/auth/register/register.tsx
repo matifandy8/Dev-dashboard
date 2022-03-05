@@ -72,10 +72,12 @@ const Register = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        console.log("Registered with:", user.email);
+        console.log(user.uid);
+        window.localStorage.setItem("token", user.uid);
+        navigate("/");
+        console.log("Registered with:", user.email);        
       })
-        .catch((error: any) => alert(error.message));
-
+      .catch((error: any) => alert(error.message));
   };
 
   return (
@@ -189,13 +191,9 @@ const Register = () => {
               <button type="submit" className="btn btn-primary">
                 Register
               </button>
-              <button
-                type="button"
-                onClick={() => reset()}
-                className="btn btn-warning float-right"
-              >
-                Reset
-              </button>
+              <p>
+                Already a member? <a href="/login">Sign In</a>{" "}
+              </p>
             </div>
           </form>
         </div>

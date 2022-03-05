@@ -443,6 +443,17 @@ a {
   display: flex;
   justify-content: flex-end;
 }
+.NavPublic__logo, .NavPrivate__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 80%;
+}
+.NavPublic__logo img, .NavPrivate__logo img {
+  height: 40px;
+  width: 40px;
+}
 .NavPublic__list, .NavPrivate__list {
   display: flex;
   justify-content: center;
@@ -451,13 +462,14 @@ a {
   color: white;
 }
 .NavPublic__item, .NavPrivate__item {
-  background-color: pink;
+  background-color: white;
   padding: 5px;
   border-radius: 3px;
   margin: 5px;
+  color: black;
 }
 .NavPublic__link, .NavPrivate__link {
-  color: white;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
@@ -479,6 +491,14 @@ a {
   background-color: black;
   transition: 0.5s;
   color: white;
+}
+.Sidebar__logo {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.Sidebar__logo img {
+  height: 40px;
+  width: 40px;
 }
 .Sidebar__hamburger {
   padding-top: 15px;
@@ -605,10 +625,17 @@ a {
   width: 100%;
   padding: 10px;
 }
+.container__auth .authForm .form-group p {
+  padding: 20px;
+}
+.container__auth .authForm .form-group p a {
+  color: #4f3cc9;
+  text-decoration: none;
+}
 .container__auth .authForm .form-group .invalid-feedback {
   color: #f44336;
   padding: 5px;
-  font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container__auth .authForm .form-group label {
   display: block;

@@ -1,19 +1,17 @@
 import { getAuth, signOut } from "firebase/auth";
-import React from "react";
 import Sidebar from "../sidebars/Sidebar";
 
 const NavPrivate = () => {
   const auth = getAuth();
 
   const Logout = () => {
-   const token = localStorage.getItem("token");
+    const token = localStorage.getItem("token");
     if (token) {
       localStorage.removeItem("token");
       // reload
       window.location.reload();
     }
     signOut(auth);
-
   };
 
   return (
