@@ -1,24 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+// variables.$text-font-stack
+ $text-font-stack:  "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+ sans-serif;
 
-// $text-font-stack: 'Space Mono', monospace;;
+//  variables.$primary-color
+ $primary-color:  #000;
 
-// $primary-color:  #009933;
+//  variables.$title-color
+ $title-color:  #000000;
 
-// $title-color:  #00ff55;
+//  variables.$secondary-color
+$secondary-color:  #ffffff;
 
-// $text-color:  #008f30;
-
-
-// $bg-color: black;
 
 $max-width: 1180px;
 
 $breakpoints: (
-  'small': 320px,
+  'small': 600px,
   'medium': 768px,
-  'large': 1024px,
+  'large': 960px,
 );
 
 

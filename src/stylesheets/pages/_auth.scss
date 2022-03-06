@@ -1,3 +1,6 @@
+@use  '../abstracts/variables';
+
+
 .container {
   &__sidebar {
     display: none;
@@ -10,8 +13,7 @@
     justify-content: center;
     width: 100%;
     &-title {
-      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-        sans-serif;
+      font-family: variables.$text-font-stack;
       margin: 30px 0px;
       text-align: left;
     }
@@ -25,7 +27,7 @@
       border-bottom: 1px solid rgb(224, 224, 224);
       span {
         padding: 0 10px;
-        background: #fff;
+        background: variables.$secondary-color;
         color: #606060;
         font-size: 1.2em;
       }
@@ -36,7 +38,7 @@
       align-items: center;
       height: 40px;
       width: 400px;
-      background-color: rgb(255, 255, 255);
+      background-color: variables.$secondary-color;
       box-shadow: rgb(0 0 0 / 44%) 0px 1px 2px 0px;
       border: none;
       &:hover {
@@ -65,8 +67,7 @@
         .invalid-feedback {
           color: #f44336;
           padding: 5px;
-          font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica,
-            Arial, sans-serif;
+          font-family: variables.$text-font-stack;
         }
         input {
           height: 18px;
@@ -74,8 +75,7 @@
         }
         label {
           color: #6e6d7a;
-          font-family: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue",
-            Helvetica, Arial, sans-serif;
+          font-family: variables.$text-font-stack;
           padding-left: 10px;
         }
       }
@@ -97,15 +97,13 @@
         .invalid-feedback {
           color: #f44336;
           padding: 5px;
-          font-family: "Haas Grot Text R Web", "Helvetica Neue",
-            Helvetica, Arial, sans-serif;
+          font-family: variables.$text-font-stack;
         }
         label {
           display: block;
           margin: 14px 0 4px;
           color: #0d0c22;
-          font: bold 15px/24px "Haas Grot Text R Web", "Helvetica Neue",
-            Helvetica, Arial, sans-serif;
+          font-family: variables.$text-font-stack;
         }
         input {
           display: block;
@@ -115,7 +113,7 @@
           border-radius: 8px;
           background-color: #f3f3f4;
           &:hover {
-            background-color: white;
+            background-color: variables.$secondary-color;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
           }
           &:focus {
@@ -132,12 +130,12 @@
       padding: 10px;
       background: #0c0b0b;
       border-radius: 8px;
-      color: white;
+      color: variables.$secondary-color;
       border: none;
       margin: 5px;
       &:hover {
         background-color: #272525;
-        color: white;
+        color: variables.$secondary-color;
       }
     }
   }
@@ -162,12 +160,11 @@
         max-width: 100%;
         margin: 0;
         padding: 40px 40px 30px;
-        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-          sans-serif;
+        font-family: variables.$text-font-stack;
         span {
           font-size: 1.2em;
           font-weight: bold;
-          color: #fff;
+          color: variables.$secondary-color;
           opacity: 0.7;
         }
         h2 {
