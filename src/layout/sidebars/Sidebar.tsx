@@ -11,28 +11,33 @@ const Sidebar = () => {
   const data = [
     {
       title: "Dashboard",
-      icon: "fas fa-tachometer-alt",
+      icon: "fas fa-home",
       link: "/dashboard",
     },
     {
-      title: "Users",
-      icon: "fas fa-users",
-      link: "/users",
+      title: "Projects",
+      icon: "fas fa-tasks",
+      link: "/projects",
     },
     {
-      title: "Posts",
+      title: "Learning",
       icon: "fas fa-pencil-alt",
-      link: "/posts",
+      link: "/learning",
     },
     {
-      title: "Categories",
+      title: "Calendar",
       icon: "fas fa-list-alt",
-      link: "/categories",
+      link: "/calendar",
     },
     {
-      title: "Comments",
-      icon: "fas fa-comments",
-      link: "/comments",
+      title: "Social Media",
+      icon: "fas fa-users",
+      link: "/social-media",
+    },
+    {
+      title: "Profile",
+      icon: "fas fa-user",
+      link: "/profile",
     },
   ];
 
@@ -49,18 +54,6 @@ const Sidebar = () => {
         <div className="Sidebar__hamburger-line"></div>
       </div>
       <ul className="Sidebar__list">
-        <li className="Sidebar__item">
-          {menuCollapse ? (
-            <>
-              <div className="Sidebar__icon"></div>
-              <a className="Sidebar__link" href="/settings">
-                Settings
-              </a>
-            </>
-          ) : (
-            <div className="Sidebar__icon"></div>
-          )}
-        </li>
         {data.map((item, index) => {
           return (
             <li className="Sidebar__item" key={index}>

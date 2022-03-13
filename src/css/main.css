@@ -513,7 +513,7 @@ a {
 .Sidebar__list {
   list-style: none;
   padding-left: 0;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 0;
   color: #ffffff;
   display: flex;
@@ -529,13 +529,15 @@ a {
 .Sidebar__link {
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 0px 0px 10px;
+  padding: 7px 0px 0px 10px;
 }
 .Sidebar__icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
