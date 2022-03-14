@@ -10,7 +10,7 @@ const NavPublic = () => {
       </div>
       <ul className="NavPublic__list">
         <li className="NavPublic__item">          
-          <a className="NavPublic__link" href="/login"> Register / Login</a>
+          <a className="NavPublic__link" href="/login">Login</a>
         </li>
       </ul>
     </nav>
