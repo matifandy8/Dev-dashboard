@@ -33,7 +33,7 @@ const Login: React.FunctionComponent<ILoginPageProps> = (props) => {
       .then((response) => {
         console.log(response.user.uid);
         window.localStorage.setItem("token", response.user.uid);
-        navigate("/");
+        navigate("/home");
       })
       .catch((error) => {
         console.log(error);

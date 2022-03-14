@@ -1,6 +1,16 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Layout from "../../layout";
 
 function PublicHome() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/home");
+    }
+  }, [navigate]);
   return (
     <Layout>
       <div className="publicHome">

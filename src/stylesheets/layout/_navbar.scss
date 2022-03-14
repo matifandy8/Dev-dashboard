@@ -6,16 +6,23 @@
 .NavPublic, .NavPrivate {
   height: 60px;
   width: 100%;
-  background-color: variables.$primary-color;
-  color: variables.$secondary-color;
+  background-color: variables.$secondary-color;
+  color: variables.$primary-color;
   display: flex;
   justify-content: flex-end;
   &__logo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    font-family: "Whyte Inktrap", Whyte, sans-serif;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
     width: 80%;
+    text-decoration: none;
     img {
       height: 40px;
       width: 40px;
@@ -36,9 +43,18 @@
     color: variables.$primary-color;
   }
   &__link {
-    color: variables.$primary-color;
-    text-decoration: none;
-    cursor: pointer;
+    background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        border-radius: 10px;
+        padding: 14px 24px 16px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        border: 0px;
+        cursor: pointer;
+        user-select: none;
+        transition: transform 200ms ease 0s, background 200ms ease 0s;
   }
 }
 

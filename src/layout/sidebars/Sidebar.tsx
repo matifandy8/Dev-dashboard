@@ -44,8 +44,8 @@ const Sidebar = () => {
   return (
     <div className="Sidebar">
       <div className="Sidebar__logo">
-        <Link to="/">
-          <img src="https://images-platform.99static.com//Wrisfu9BQQZDWOgH8lqGSwcxR9s=/702x3277:1300x3876/fit-in/500x500/99designs-contests-attachments/121/121844/attachment_121844903" alt="logo" />
+        <Link to="/home">
+          <img src="https://i.pinimg.com/originals/ea/37/7c/ea377cec0a65ab19e4e2438de6993773.png" alt="logo" />
         </Link>
       </div>
       <div className="Sidebar__hamburger" onClick={menuIconClick}>

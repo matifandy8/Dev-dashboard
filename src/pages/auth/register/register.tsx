@@ -74,7 +74,7 @@ const Register = () => {
         const user = userCredential.user;
         console.log(user.uid);
         window.localStorage.setItem("token", user.uid);
-        navigate("/");
+        navigate("/home");
         console.log("Registered with:", user.email);        
       })
       .catch((error: any) => alert(error.message));
