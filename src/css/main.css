@@ -354,6 +354,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #f3f2ef;
 }
 
 /**
@@ -435,7 +436,8 @@ a {
   width: 1px;
 }
 
-.NavPublic, .NavPrivate {
+.NavPublic,
+.NavPrivate {
   height: 60px;
   width: 100%;
   background-color: #ffffff;
@@ -443,7 +445,8 @@ a {
   display: flex;
   justify-content: flex-end;
 }
-.NavPublic__logo, .NavPrivate__logo {
+.NavPublic__logo,
+.NavPrivate__logo {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -457,31 +460,35 @@ a {
   width: 80%;
   text-decoration: none;
 }
-.NavPublic__logo img, .NavPrivate__logo img {
+.NavPublic__logo img,
+.NavPrivate__logo img {
   height: 40px;
   width: 40px;
 }
-.NavPublic__list, .NavPrivate__list {
+.NavPublic__list,
+.NavPrivate__list {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   color: #ffffff;
 }
-.NavPublic__item, .NavPrivate__item {
+.NavPublic__item,
+.NavPrivate__item {
   background-color: #ffffff;
   padding: 5px;
   border-radius: 3px;
   margin: 5px;
   color: #000;
 }
-.NavPublic__link, .NavPrivate__link {
+.NavPublic__link,
+.NavPrivate__link {
   background: black;
   color: white;
   display: inline-block;
   border-radius: 10px;
-  padding: 14px 24px 16px;
-  font-size: 18px;
+  padding: 12px 20px 14px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
   border: 0px;
@@ -779,4 +786,43 @@ a {
   cursor: pointer;
   user-select: none;
   transition: transform 200ms ease 0s, background 200ms ease 0s;
+}
+
+.home {
+  padding-left: 65px;
+  display: flex;
+  flex-direction: column;
+}
+.home__projects, .home__learning {
+  max-width: 350px;
+  min-width: 150px;
+  height: 150px;
+  text-align: left;
+  padding: 20px 10px;
+  margin: 20px 10px;
+  max-width: 350px;
+  min-width: 150px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.home__projects .title, .home__learning .title {
+  display: flex;
+  justify-content: space-between;
+}
+.home__projects h3, .home__learning h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 5px;
+}
+.home__projects p, .home__learning p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  margin: 5px;
+}
+.home__projects .dots, .home__learning .dots {
+  width: 5px;
+  top: 0;
+  right: 0;
 }
