@@ -683,6 +683,7 @@ a {
   border: none;
   border-radius: 8px;
   background-color: #f3f3f4;
+  border: 2px solid #000;
 }
 .container__auth .authForm .form-group input:hover {
   background-color: #ffffff;
@@ -749,9 +750,15 @@ a {
 }
 .publicHome {
   padding: 50px 15px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .publicHome__title {
-  font-size: 44px;
+  font-size: 74px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -794,13 +801,13 @@ a {
   flex-direction: column;
 }
 .home__projects, .home__learning, .home__socialmedia, .home__calendar {
-  max-width: 350px;
+  max-width: 450px;
   min-width: 150px;
   height: 150px;
   text-align: left;
   padding: 20px 10px;
   margin: 20px 10px;
-  max-width: 350px;
+  max-width: 1100px;
   min-width: 150px;
   height: auto;
   background-color: #fff;
@@ -852,7 +859,7 @@ a {
 @media only screen and (min-width: 992px) {
   .home {
     display: grid;
-    grid-template-columns: 300px auto 350px;
+    grid-template-columns: 1fr 1fr 350px;
     grid-template-rows: auto auto;
     grid-template-areas: "projects learning calendar" "socialmedia socialmedia socialmedia";
   }

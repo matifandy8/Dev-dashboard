@@ -6,18 +6,18 @@
   &__learning,
   &__socialmedia,
   &__calendar {
-    max-width: 350px;
+    max-width: 450px;
     min-width: 150px;
     height: 150px;
     text-align: left;
     padding: 20px 10px;
     margin: 20px 10px;
-    max-width: 350px;
+    max-width: 1100px;
     min-width: 150px;
     height: auto;
     background-color: #fff;
     border-radius: 8px;
-    .title{
+    .title {
       display: flex;
       justify-content: space-between;
       padding-bottom: 20px;
@@ -34,13 +34,11 @@
       margin: 5px;
     }
     .all {
-     font-size: 1rem;
-     padding: 5px;
+      font-size: 1rem;
+      padding: 5px;
     }
   }
 }
-
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -48,43 +46,44 @@
     display: grid;
     grid-template-columns: auto auto 350px;
     grid-template-rows: auto auto;
-    grid-template-areas: "projects learning calendar"
-                         "socialmedia socialmedia socialmedia";
-                         &__projects{
-                            grid-area: projects;
-                         }
-                          &__learning{
-                              grid-area: learning;
-                          }
-                          &__socialmedia{
-                              grid-area: socialmedia;
-                          }
-                          &__calendar{
-                              grid-area: calendar;
-                          }
+    grid-template-areas:
+      "projects learning calendar"
+      "socialmedia socialmedia socialmedia";
+    &__projects {
+      grid-area: projects;
+    }
+    &__learning {
+      grid-area: learning;
+    }
+    &__socialmedia {
+      grid-area: socialmedia;
+    }
+    &__calendar {
+      grid-area: calendar;
+    }
   }
-  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .home {
     display: grid;
-    grid-template-columns: 300px auto 350px;
+    grid-template-columns: 1fr 1fr 350px;
     grid-template-rows: auto auto;
-    grid-template-areas: "projects learning calendar"
-                         "socialmedia socialmedia socialmedia";
-                         &__projects{
-                            grid-area: projects;
-                         }
-                          &__learning{
-                              grid-area: learning;
-                          }
-                          &__socialmedia{
-                              grid-area: socialmedia;
-                          }
-                          &__calendar{
-                              grid-area: calendar;
-                          }
+    grid-template-areas:
+      "projects learning calendar"
+      "socialmedia socialmedia socialmedia";
+    &__projects {
+      grid-area: projects;
+    }
+    &__learning {
+      grid-area: learning;
+    }
+    &__socialmedia {
+      grid-area: socialmedia;
+    }
+    &__calendar {
+      grid-area: calendar;
+    }
   }
 }

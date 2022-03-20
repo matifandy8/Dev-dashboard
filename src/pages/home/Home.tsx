@@ -28,6 +28,10 @@ const Home = () => {
           </div>
           <h3>HTML</h3>
           <h3>CSS</h3>
+          <h3>JavaScript</h3>
+          <h3>React</h3>
+          <h3>Node.js</h3>
+          <h3>MongoDB</h3>
         </div>
         <div className="home__socialmedia">
           <div className="title">
@@ -36,8 +40,11 @@ const Home = () => {
               <a href="/social-media">See All</a>
             </div>
           </div>
-          <h3>TWITTER</h3>
-          <h3>GITHUB</h3>
+          <h3>Twitter</h3>
+          <h3>Github</h3>
+          <h3>Twitch</h3>
+          <h3>Youtube</h3>
+          <h3>Medium</h3>
         </div>
         <div className="home__calendar">
           <div className="title">

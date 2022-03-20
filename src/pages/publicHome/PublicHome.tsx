@@ -16,7 +16,7 @@ function PublicHome() {
       <div className="publicHome">
         <h1 className="publicHome__title">Dev-dash for developers</h1>
         <p className="publicHome__subtitle">
-          Platform to help developers to share their knowledge and experience.r.
+          Platform to help developers to share their projects, knowledge and experience.
         </p>
         <div className="publicHome__btn">
           <button>Try Dev-Dash for free</button>
