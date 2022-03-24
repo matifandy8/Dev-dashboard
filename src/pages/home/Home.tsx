@@ -1,5 +1,8 @@
 import Layout from "../../layout";
 import MyCalendar from "./components/Calendar";
+import Learning from "./components/Learning";
+import Projects from "./components/Projects";
+import Socialmedia from "./components/Socialmedia";
 
 const Home = () => {
   return (
@@ -13,11 +16,7 @@ const Home = () => {
               <a href="/projects">See All</a>
             </div>
           </div>
-          <h3>Project 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            quisquam.
-          </p>
+          <Projects/>
         </div>
         <div className="home__learning">
           <div className="title">
@@ -26,12 +25,7 @@ const Home = () => {
               <a href="/learning">See All</a>
             </div>
           </div>
-          <h3>HTML</h3>
-          <h3>CSS</h3>
-          <h3>JavaScript</h3>
-          <h3>React</h3>
-          <h3>Node.js</h3>
-          <h3>MongoDB</h3>
+         <Learning/>
         </div>
         <div className="home__socialmedia">
           <div className="title">
@@ -40,11 +34,7 @@ const Home = () => {
               <a href="/social-media">See All</a>
             </div>
           </div>
-          <h3>Twitter</h3>
-          <h3>Github</h3>
-          <h3>Twitch</h3>
-          <h3>Youtube</h3>
-          <h3>Medium</h3>
+        <Socialmedia/>
         </div>
         <div className="home__calendar">
           <div className="title">

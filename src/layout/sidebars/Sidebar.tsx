@@ -45,7 +45,10 @@ const Sidebar = () => {
     <div className="Sidebar">
       <div className="Sidebar__logo">
         <Link to="/home">
-          <img src="https://i.pinimg.com/originals/ea/37/7c/ea377cec0a65ab19e4e2438de6993773.png" alt="logo" />
+          <img
+            src="https://i.pinimg.com/originals/ea/37/7c/ea377cec0a65ab19e4e2438de6993773.png"
+            alt="logo"
+          />
         </Link>
       </div>
       <div className="Sidebar__hamburger" onClick={menuIconClick}>
@@ -68,7 +71,9 @@ const Sidebar = () => {
                 </div>
               ) : (
                 <div className="Sidebar__icon">
-                  <i className={item.icon}></i>
+                  <a className="Sidebar__link" href={item.link}>
+                    <i className={item.icon}></i>
+                  </a>
                 </div>
               )}
             </li>
