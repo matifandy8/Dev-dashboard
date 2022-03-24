@@ -58,14 +58,14 @@ const Sidebar = () => {
           return (
             <li className="Sidebar__item" key={index}>
               {menuCollapse ? (
-                <>
+                <div className="Sidebar__item-collapse">
                   <div className="Sidebar__icon">
                     <i className={item.icon}></i>
                   </div>
                   <a className="Sidebar__link" href={item.link}>
                     {item.title}
                   </a>
-                </>
+                </div>
               ) : (
                 <div className="Sidebar__icon">
                   <i className={item.icon}></i>

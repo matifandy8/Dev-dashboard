@@ -1,13 +1,15 @@
+@use  '../abstracts/variables';
+
+
 .home {
   padding-left: 65px;
   display: flex;
   flex-direction: column;
+
   &__projects,
   &__learning,
   &__socialmedia,
   &__calendar {
-    max-width: 450px;
-    min-width: 150px;
     height: 150px;
     text-align: left;
     padding: 20px 10px;

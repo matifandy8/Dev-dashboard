@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -450,8 +451,6 @@ a {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.01em;
-  font-family: "Whyte Inktrap", Whyte, sans-serif;
   color: #000;
   display: flex;
   align-items: center;
@@ -523,8 +522,6 @@ a {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.01em;
-  font-family: "Whyte Inktrap", Whyte, sans-serif;
   color: white;
 }
 .Sidebar__logo img {
@@ -554,13 +551,19 @@ a {
 .Sidebar__item {
   display: flex;
   margin: 5px;
-  padding: 10px;
-  padding-bottom: 20px;
+  padding: 15px 10px;
+}
+.Sidebar__item :hover {
+  background-color: #ffffff;
+  color: black;
+}
+.Sidebar__item-collapse {
+  display: flex;
 }
 .Sidebar__link {
   color: #ffffff;
   text-decoration: none;
-  padding: 7px 0px 0px 10px;
+  padding: 7px 10px 0px 10px;
 }
 .Sidebar__icon {
   width: 30px;
@@ -585,7 +588,6 @@ a {
   width: 100%;
 }
 .container__auth-title {
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 30px 0px;
   text-align: left;
 }
@@ -639,7 +641,6 @@ a {
 .container__auth .authForm .form-check .invalid-feedback {
   color: #f44336;
   padding: 5px;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container__auth .authForm .form-check input {
   height: 18px;
@@ -647,7 +648,6 @@ a {
 }
 .container__auth .authForm .form-check label {
   color: #6e6d7a;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-left: 10px;
 }
 .container__auth .authForm .form-group {
@@ -668,13 +668,11 @@ a {
 .container__auth .authForm .form-group .invalid-feedback {
   color: #f44336;
   padding: 5px;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container__auth .authForm .form-group label {
   display: block;
   margin: 14px 0 4px;
   color: #0d0c22;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container__auth .authForm .form-group input {
   display: block;
@@ -730,7 +728,6 @@ a {
     max-width: 100%;
     margin: 0;
     padding: 40px 40px 30px;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .container__sidebar .sidebar__text span {
     font-size: 1.2em;
@@ -762,7 +759,6 @@ a {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
-  font-family: "Whyte Inktrap", Whyte, sans-serif;
   margin: 64px auto 32px;
   color: black;
   margin: 0px auto 40px;
@@ -801,8 +797,6 @@ a {
   flex-direction: column;
 }
 .home__projects, .home__learning, .home__socialmedia, .home__calendar {
-  max-width: 450px;
-  min-width: 150px;
   height: 150px;
   text-align: left;
   padding: 20px 10px;

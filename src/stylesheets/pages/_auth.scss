@@ -13,7 +13,6 @@
     justify-content: center;
     width: 100%;
     &-title {
-      font-family: variables.$text-font-stack;
       margin: 30px 0px;
       text-align: left;
     }
@@ -67,7 +66,6 @@
         .invalid-feedback {
           color: #f44336;
           padding: 5px;
-          font-family: variables.$text-font-stack;
         }
         input {
           height: 18px;
@@ -75,7 +73,6 @@
         }
         label {
           color: #6e6d7a;
-          font-family: variables.$text-font-stack;
           padding-left: 10px;
         }
       }
@@ -97,13 +94,11 @@
         .invalid-feedback {
           color: #f44336;
           padding: 5px;
-          font-family: variables.$text-font-stack;
         }
         label {
           display: block;
           margin: 14px 0 4px;
           color: #0d0c22;
-          font-family: variables.$text-font-stack;
         }
         input {
           display: block;
@@ -161,7 +156,6 @@
         max-width: 100%;
         margin: 0;
         padding: 40px 40px 30px;
-        font-family: variables.$text-font-stack;
         span {
           font-size: 1.2em;
           font-weight: bold;
